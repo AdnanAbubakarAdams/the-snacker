@@ -1,0 +1,45 @@
+/* Design token */
+:root {
+    --color-bg: #f5f6fa;
+    --color-surface: #ffffff;
+    --color-border: #e2e5ee;
+    --color-primary: #4f46e5;
+    --color-primary-dark: #3730a3;
+    --color-text: #1a1d2e;
+    --color-text-muted: #6b7280;
+    --color-tag-bg: #ede9fe;
+    --color-tag-text: #4f46e5;
+    --radius-card: 12px;
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.07);
+    --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
