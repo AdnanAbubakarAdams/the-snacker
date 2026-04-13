@@ -20,3 +20,4 @@ export default function MemberCard({ member }) {
     </Link>
   );
 }
+// will update this later 
