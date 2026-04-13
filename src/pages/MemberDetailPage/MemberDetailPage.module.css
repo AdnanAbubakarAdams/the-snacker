@@ -1,0 +1,168 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: opacity 0.15s;
+    align-self: flex-start;
+}
+
+.backLink:hover {
+    opacity: 0.75;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 48px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.photoCol {
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 360px;
+}
+
+.detailsCol {
+    padding: 40px 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.department {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.3em;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-top: 4px;
+}
+
+.role {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    margin-top: -16px;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+.sectionLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+}
+
+.skillsSection,
+.contactSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill {
+    background-color: var(--color-tag-bg);
+    color: var(--color-tag-text);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.contactList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.contactIcon {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.contactLink {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 60px;
+    align-items: flex-start;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .profile {
+        grid-template-columns: 1fr;
+    }
+    .photo {
+        min-height: 280px;
+    }
+
+    .detailsCol {
+        padding: 24px;
+    }
+}

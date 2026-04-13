@@ -1,0 +1,23 @@
+.page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-top: 6px;
+}
