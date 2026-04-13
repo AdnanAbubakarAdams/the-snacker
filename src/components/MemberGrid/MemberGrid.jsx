@@ -1,5 +1,5 @@
-import MemberCard from '../MemberCard/MemberCard';
-import styles from './MemberGrid.module.css';
+import MemberCard from "../MemberCard/MemberCard";
+import styles from "./MemberGrid.module.css";
 
 export default function MemberGrid({ members }) {
   return (
